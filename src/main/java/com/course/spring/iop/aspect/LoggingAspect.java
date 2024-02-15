@@ -2,6 +2,7 @@ package com.course.spring.iop.aspect;
 
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
@@ -59,6 +60,10 @@ public class LoggingAspect {
         System.out.println(methodSignature);
         System.out.println(methodSignature.getMethod());
         System.out.println("****LOGGING ASPECT****");
+    }
+    @AfterReturning("com.course.spring.iop.aspect.MyPointCuts.allGetMethods()")
+    public void afterGet(){
+        System.out.println("after method");
     }
 //        @Before("allGetMethods()")
 //    public void beforeGetSecurityAdvice() {
