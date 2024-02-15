@@ -49,21 +49,22 @@ public class LoggingAspect {
 
     @Before("com.course.spring.iop.aspect.MyPointCuts.allGetMethods()")
     public void beforeAllGetMethodsAdvice(JoinPoint joinPoint) {
-        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
-        Object[] args = joinPoint.getArgs();
-        for (Object arg :args){
-            System.out.println(arg);
-        }
-
-        System.out.println(methodSignature.getReturnType());
-        System.out.println(methodSignature.getName());
-        System.out.println(methodSignature);
-        System.out.println(methodSignature.getMethod());
+//        MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
+//        Object[] args = joinPoint.getArgs();
+//        for (Object arg :args){
+//            System.out.println(arg);
+//        }
+//
+//        System.out.println(methodSignature.getReturnType());
+//        System.out.println(methodSignature.getName());
+//        System.out.println(methodSignature);
+//        System.out.println(methodSignature.getMethod());
         System.out.println("****LOGGING ASPECT****");
     }
     @AfterReturning("com.course.spring.iop.aspect.MyPointCuts.allGetMethods()")
     public void afterGet(){
         System.out.println("after method");
+        System.out.println("******************************************");
     }
 //        @Before("allGetMethods()")
 //    public void beforeGetSecurityAdvice() {

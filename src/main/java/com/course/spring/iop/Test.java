@@ -12,8 +12,8 @@ public class Test {
 //            libraryS.getBook();
 //            libraryU.returnMagazine();
 //            libraryS.returnMagazine("");
-            libraryU.addBook("Tom", book);
-            libraryU.addMagazine();
+//            libraryU.addBook("Tom", book);
+//            libraryU.addMagazine();
         }
     }
 }
