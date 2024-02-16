@@ -1,7 +1,8 @@
-package com.course.spring.hibernate;
+package com.course.spring.hibernate.base;
 
 
-import com.course.spring.hibernate.entity.Employee;
+
+import com.course.spring.hibernate.base.entity.Employee;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
